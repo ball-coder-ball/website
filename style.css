@@ -1,0 +1,248 @@
+/* --- STYLES.CSS --- */
+/* Custom stylesheet for the "Against Drug Abuse" Campaign Website */
+
+/* --- Fonts and Global Styles --- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #e6e9f0); /* Light gradient background */
+    color: #334155; /* Slate 700 for text */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e2e8f0; /* Slate 200 */
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-button {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px; /* Pill shape */
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f1f5f9; /* Slate 100 */
+    color: #475569; /* Slate 600 */
+}
+
+.nav-button:hover {
+    background-color: #e2e8f0; /* Slate 200 */
+    border-color: #06b6d4; /* Cyan 500 */
+}
+
+.nav-button.active {
+    background: linear-gradient(to right, #06b6d4, #14b8a6); /* Cyan to Teal gradient */
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(0, 182, 212, 0.39);
+    border-color: #0e7490; /* Cyan 700 */
+}
+
+/* --- Page Headers --- */
+.page-header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.gradient-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0891b2, #0d9488); /* Cyan 600 to Teal 600 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #64748b; /* Slate 500 */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Info Graphic Cards --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid transparent;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.info-card img {
+    width: 100%;
+    height: 16rem; /* 256px */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #475569; /* Slate 600 */
+}
+
+/* --- Card Title Colors --- */
+.text-red { color: #dc2626; border-color: #dc2626; }
+.text-gray { color: #475569; border-color: #475569; }
+.text-emerald { color: #059669; border-color: #059669; }
+.text-indigo { color: #4f46e5; border-color: #4f46e5; }
+.text-amber { color: #d97706; border-color: #d97706; }
+.text-orange { color: #ea580c; border-color: #ea580c; }
+.text-cyan { color: #0891b2; border-color: #0891b2; }
+.text-slate { color: #475569; border-color: #475569; }
+
+
+/* --- Strategy Section --- */
+.strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.strategy-card {
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid;
+    transition: transform 0.3s ease;
+}
+
+.strategy-card:hover {
+    transform: scale(1.05);
+}
+
+.strategy-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.border-blue { border-color: #3b82f6; }
+.border-yellow { border-color: #f59e0b; }
+.border-green { border-color: #16a34a; }
+.border-red { border-color: #ef4444; }
+
+
+/* --- Help Footer --- */
+.help-footer {
+    background: linear-gradient(to right, #0891b2, #0d9488);
+    color: white;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+.help-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hotline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hotline-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hotline-number {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* --- Utility Classes --- */
+.hidden {
+    display: none !important;
+}
+
+.page-content {
+    animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Container --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* --- Main Footer --- */
+.main-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e2e8f0; /* Slate 200 */
+    color: #64748b; /* Slate 500 */
+    font-size: 0.875rem;
+}
+
