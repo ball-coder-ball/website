@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Against Drug Abuse - Awareness Campaign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles & Custom Animations */
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #F7F9FC;
+            color: #2D3748;
+        }
+
+        .gradient-text {
+            background-image: linear-gradient(to right, #06b6d4, #14b8a6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Animation for fading in the content pages */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-content {
+            animation: fade-in 0.5s ease-out forwards;
+        }
+        
+        /* The 'hidden' class will be toggled by JavaScript to show/hide pages */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-white p-4 sticky top-0 z-50 shadow-md">
+        <ul class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+            <li>
+                <button data-page="meth" class="nav-button px-3 py-2 text-sm md:text-base font-semibold rounded-md transition-all duration-300 flex items-center gap-2 bg-teal-500 text-white shadow-md">
+                    <span class="hidden md:inline">💊</span>
+                    <span>Methamphetamine</span>
+                </button>
+            </li>
+            <li>
+                <button data-page="cannabis" class="nav-button px-3 py-2 text-sm md:text-base font-semibold rounded-md transition-all duration-300 flex items-center gap-2 text-gray-600 hover:bg-teal-100 hover:text-teal-700">
+                    <span class="hidden md:inline">🌿</span>
+                    <span>Cannabis</span>
+                </button>
+            </li>
+            <li>
+                <button data-page="kratom" class="nav-button px-3 py-2 text-sm md:text-base font-semibold rounded-md transition-all duration-300 flex items-center gap-2 text-gray-600 hover:bg-teal-100 hover:text-teal-700">
+                    <span class="hidden md:inline">🍃</span>
+                    <span>Kratom</span>
+                </button>
+            </li>
+            <li>
+                <button data-page="ecigarettes" class="nav-button px-3 py-2 text-sm md:text-base font-semibold rounded-md transition-all duration-300 flex items-center gap-2 text-gray-600 hover:bg-teal-100 hover:text-teal-700">
+                    <span class="hidden md:inline">💨</span>
+                    <span>E-Cigarettes</span>
+                </button>
+            </li>
+            <li>
+                <button data-page="strategy" class="nav-button px-3 py-2 text-sm md:text-base font-semibold rounded-md transition-all duration-300 flex items-center gap-2 text-gray-600 hover:bg-teal-100 hover:text-teal-700">
+                    <span class="hidden md:inline">🛡️</span>
+                    <span>Prevention & Help</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area where pages will be displayed -->
+    <main class="container mx-auto p-4 md:p-8">
+        <!-- Methamphetamine Page Content -->
+        <div id="meth" class="page-content">
+            <header class="text-center my-8 md:my-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Methamphetamine (Yaba/Ice)</h1>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto text-gray-600">A Dangerous Path to Destruction. Choose Health, Not Meth.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/1.jpg" alt="Brain damage from stimulants" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Catastrophic Brain Damage</h3>
+                        <p class="text-gray-600">Stimulant abuse can cause blood vessels to rupture, leading to severe intracerebral hemorrhage (bleeding in the brain). This can result in permanent brain damage, stroke, or death.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/2.jpg" alt="Gavel and handcuffs" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-700">Severe Legal Consequences</h3>
+                        <p class="text-gray-600">In Thailand, drug offenses carry harsh penalties. A conviction for possession or trafficking can lead to long prison sentences, destroying future opportunities and impacting your entire life.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Cannabis Page Content -->
+        <div id="cannabis" class="page-content hidden">
+            <header class="text-center my-8 md:my-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Cannabis (Ganja)</h1>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto text-gray-600">Your Brain is Developing. Protect Its Potential.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/3.jpg" alt="Illustration of adolescent brains" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-emerald-600">Alters Adolescent Brain Structure</h3>
+                        <p class="text-gray-600">The adolescent brain is still maturing. Cannabis use can interfere with this critical process, altering the development of pathways responsible for memory, learning, and emotional regulation.</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/4.png" alt="Illustration of psychosis and mental health issues" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-indigo-600">Increased Risk of Psychosis</h3>
+                        <p class="text-gray-600">Studies show a strong link between adolescent cannabis use and an increased risk of developing serious mental health disorders, including anxiety, depression, and schizophrenia-like psychosis.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Kratom Page Content -->
+        <div id="kratom" class="page-content hidden">
+            <header class="text-center my-8 md:my-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Kratom (4x100 Cocktail)</h1>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto text-gray-600">A Dangerous Mix. Don't Get Caught in the Cocktail.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/5.jpg" alt="Kratom cocktail" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-600">The '4x100' Cocktail Menace</h3>
+                        <p class="text-gray-600">This dangerous mixture combines brewed kratom leaves with cough syrup and other substances. The resulting concoction is highly unpredictable and has led to numerous hospitalizations and deaths.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/6.jpg" alt="Person struggling with addiction" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-orange-600">Leads to Opioid-like Addiction</h3>
+                        <p class="text-gray-600">At high doses, kratom binds to the same receptors as opioids. This creates a strong potential for physical dependence and addiction, with painful withdrawal symptoms similar to those of other opioids.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- E-Cigarettes Page Content -->
+        <div id="ecigarettes" class="page-content hidden">
+            <header class="text-center my-8 md:my-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">E-Cigarettes (Vaping)</h1>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto text-gray-600">Don't Be Deceived. Vaping is Not Harmless.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/7.png" alt="No vaping sign" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-cyan-600">Vaping is Not Permitted</h3>
+                        <p class="text-gray-600">E-cigarettes are illegal in Thailand and often included in smoking bans globally. They are recognized as a public health risk, not a safe alternative to traditional cigarettes.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <img src="Against Drug Abuse/8.png" alt="Comparison of healthy and damaged lungs" class="w-full h-52 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 text-slate-600">Causes Severe Lung Damage</h3>
+                        <p class="text-gray-600">The aerosol from vapes is not harmless "water vapor." It contains a toxic mix of chemicals and fine particles that can cause inflammation and irreversible damage to the lungs, similar to smoking.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Strategy Page Content -->
+        <div id="strategy" class="page-content hidden">
+             <header class="text-center my-8 md:my-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Your Future is Bright: A Guide to Protection</h1>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto text-gray-600">Empowering youth with the strength to choose a drug-free life.</p>
+            </header>
+            <section class="my-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Building a Shield of Support</h2>
+                <p class="text-center max-w-3xl mx-auto mb-12 text-gray-600">Effective prevention is a team effort. It builds resilience and provides positive alternatives, giving young people every reason to say "yes" to a healthy, promising future.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-3 flex items-center justify-center"><span class="text-3xl mr-3">👤</span> INDIVIDUAL</h3>
+                        <p class="text-gray-600">Build life skills, healthy coping mechanisms, and strong self-esteem.</p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500">
+                        <h3 class="text-2xl font-bold text-yellow-600 mb-3 flex items-center justify-center"><span class="text-3xl mr-3">👨‍👩‍👧</span> FAMILY</h3>
+                        <p class="text-gray-600">Strengthen bonds, improve communication, and stay engaged.</p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-500">
+                        <h3 class="text-2xl font-bold text-green-600 mb-3 flex items-center justify-center"><span class="text-3xl mr-3">🌍</span> COMMUNITY</h3>
+                        <p class="text-gray-600">Offer positive activities, school support, and local awareness.</p>
+                    </div>
+                    <div class="text-center bg-white p-6 rounded-lg shadow-lg border-t-4 border-red-500">
+                         <h3 class="text-2xl font-bold text-red-600 mb-3 flex items-center justify-center"><span class="text-3xl mr-3">🏛️</span> NATIONAL</h3>
+                        <p class="text-gray-600">Provide clear policies, health campaigns, and accessible treatment.</p>
+                    </div>
+                </div>
+            </section>
+            <footer class="text-center mt-16 py-8 border-t border-gray-200 bg-teal-500 rounded-lg text-white">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Help and Hope are Here</h2>
+                <p class="text-center max-w-3xl mx-auto mb-8">If you or someone you know is struggling, reaching out is a sign of strength. Confidential help is a phone call away.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="bg-white text-teal-600 p-4 rounded-lg shadow-lg">
+                        <p class="text-lg font-semibold">Mental Health Hotline</p>
+                        <p class="text-4xl font-bold tracking-widest">1323</p>
+                    </div>
+                    <div class="bg-white text-teal-600 p-4 rounded-lg shadow-lg">
+                        <p class="text-lg font-semibold">Social Help Center</p>
+                        <p class="text-4xl font-bold tracking-widest">1300</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 border-t border-gray-200 mt-8">
+        <p class="text-sm text-gray-500">Data synthesized from public health reports and academic studies on substance abuse in Thailand (2018-2024).</p>
+    </footer>
+
+    <script>
+        // This script handles the page switching logic.
+        document.addEventListener('DOMContentLoaded', () => {
+            const navButtons = document.querySelectorAll('.nav-button');
+            const pages = document.querySelectorAll('.page-content');
+
+            navButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetPageId = button.dataset.page;
+
+                    // Hide all pages
+                    pages.forEach(page => {
+                        page.classList.add('hidden');
+                    });
+
+                    // Show the target page
+                    const targetPage = document.getElementById(targetPageId);
+                    if (targetPage) {
+                        targetPage.classList.remove('hidden');
+                    }
+                    
+                    // Update active button styles
+                    navButtons.forEach(btn => {
+                        btn.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
+                        btn.classList.add('text-gray-600', 'hover:bg-teal-100', 'hover:text-teal-700');
+                    });
+                    
+                    button.classList.add('bg-teal-500', 'text-white', 'shadow-md');
+                    button.classList.remove('text-gray-600', 'hover:bg-teal-100', 'hover:text-teal-700');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
